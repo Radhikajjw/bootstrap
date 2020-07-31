@@ -34,10 +34,6 @@
         </ul>
     </div>
     </div>
-
-
-
-
     </nav>
 
     <header class="jumbotron">
@@ -49,6 +45,9 @@
                 </div>
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class=" col-12 col-sm align-self-center">
+                    <a class="btn btn-info btn-lg" role="button" href="#reserve">Reserve a table</a>
                 </div>
             </div>
         </div>
@@ -63,7 +62,7 @@
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza"> 
                     <div class="media-body">
-                <h2 class="mt-0">Uthappizza</h2>
+                <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary"> $4.99</span></h2>
                 <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
             </div>
             </div>
@@ -78,7 +77,7 @@
             <div class="col-12 col-sm cl-md d-none d-sm-block">
                 <div class="media">
                     <div class="media-body">
-                <h2 class="mt-0">Weekend Grand Buffet</h2>
+                <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
             </div>
             <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
@@ -101,6 +100,63 @@
             </div>
             </div>
         </div>
+        <div class="row row-content" id="reserve">
+            <div class="col-sm-8 offset-sm-2">
+        <div class="card mb-2">
+
+            <div class="card-header bg-info text-white text-center"><h3>Reserve a Table</h3></div>
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                   <!--<div class="form-group">-->
+                        <label for="guests" class="col-sm-2 col-form-label">Number of Guests:</label>
+                        <div class="col-sm" id="guests">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="inlineRadioOptions" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" name="inlineRadioOptions" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" name="inlineRadioOptions" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">3</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox4" name="inlineRadioOptions" value="option4">
+                                <label class="form-check-label" for="inlineCheckbox4">4</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox5" name="inlineRadioOptions" value="option5">
+                                <label class="form-check-label" for="inlineCheckbox5">5</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox6" name="inlineRadioOptions" value="option6">
+                                <label class="form-check-label" for="inlineCheckbox6">6</label>
+                              </div>
+                        </div>
+                
+                </div>
+                <div class="form-group row">
+                    <label for="date" class="col-form-label col-sm-2">Date & Time</label>
+                    <div class="col-sm-5">
+                        <input type="date" placeholder="Date" name="date" id="date" class="form-control">
+                    </div>
+                    <div class="col-sm-5">
+                        <input type="time" placeholder="Time" name="time" id="time" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row" style="margin-top: 2px;">
+                    <div class="col-sm-10 offset-sm-2">
+                      <button type="submit" class="btn btn-primary">Reserve</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
     </div>
 
     <footer class="footer">
