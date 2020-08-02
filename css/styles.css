@@ -50,3 +50,23 @@ body{
 .nav-link{
     color: #0f0f0f;
 }
+.carousel {
+    background:#512DA8;
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: auto;
+    min-height: 300px;
+}
+@media (min-width: 992px) { 
+    .carousel-caption{
+        margin-left:250px;
+    }
+}
