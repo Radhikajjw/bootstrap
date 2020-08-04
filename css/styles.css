@@ -38,9 +38,7 @@ body{
  background-color: #D1C4E9;
 }
 
-.btn{
-    margin-right: 10px;
-}
+
 .tab-content{
     border-left:1px solid #ddd;
     border-right: 1px solid #ddd;
@@ -69,4 +67,10 @@ body{
     .carousel-caption{
         margin-left:250px;
     }
+}
+
+#carouselButton{
+    right:0px;
+    position: absolute;
+    bottom: 0px;
 }
