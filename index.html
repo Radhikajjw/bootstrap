@@ -21,12 +21,12 @@
 
     <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
+        <a class="navbar-brand" href="#">Raiodjbvjvkjv nk</a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#Navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="Navbar">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav  ml-auto">
             <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-sm"></span> Home</a></li>
             <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-sm"></span> About</a></li>
             <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-sm"></span> Menu</a></li>
@@ -209,14 +209,9 @@
                     </a>
                     
                     <div class="btn-group" id="carouselButton">
-                        <button class="btn btn-secondary btn-sm" id="carousel-pause">
+                        <button class="btn btn-secondary btn-sm" id="carousel-btn">
                             <span class="fa fa-pause"></span>
                         </button>
-                        <button class="btn btn-secondary btn-sm" id="carousel-play">
-                            <span class="fa fa-play"></span>
-                        </button>
-                    
-
                     </div>
                 </div>
             </div>
@@ -317,25 +312,22 @@
  <script>
    $(document).ready(function(){
         $("#mycarousel").carousel({interval:1000});
-        $("#carousel-pause").click(function(){
-            $("#mycarousel").carousel('pause');   
-        });
-        $("#carousel-play").click(function(){
-            $("#mycarousel").carousel('cycle');
+        $("#carousel-btn").click(function(){
+            if($("#carousel-btn").children("span").hasClass('fa-pause')){
+                $("#mycarousel").carousel('pause');  
+                $("#carousel-btn").children("span").removeClass('fa-pause');
+                $("#carousel-btn").children("span").addClass('fa-play');
+            }
+            else if($("#carousel-btn").children("span").hasClass('fa-play')){
+                $("#mycarousel").carousel('cycle');  
+                $("#carousel-btn").children("span").removeClass('fa-play');
+                $("#carousel-btn").children("span").addClass('fa-pause');
+            }
+
         });
    });
  </script>
-     <!-- <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 2000 } );
-            $("#c-pause").click(function(){
-                $("#mycarousel").carousel('pause');
-            });
-            $("#c-play").click(function(){
-                $("#mycarousel").carousel('cycle');
-            });
-        });
-    </script> -->
+     
 </body>
 
 </html>
